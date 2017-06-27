@@ -38,9 +38,9 @@ public:
     //Each sub element contains prime factors for the corresponding super? element
     std::vector<std::vector<int>> primeFactors;
     //First element in each sub vector is the prime number, second element is amount of steps
-    std::vector<std::vector<int>> primeSteps;
+    std::vector<Point> primeSteps;
     //Orbital sum of all numbers (e.x. 5 would be 5 + 16 + 8 + 4 + 2 + 1 = 36)
-    std::vector<int> orbitalSum;
+    std::vector<Point> orbitalSum;
 
     int largestOrbitalSum, largestPrimeFactor, largestPrimeSteps;
     int smallestStep, smallestOrbitalSum, smallestPrimeFactor, smallestPrimeSteps;

@@ -14,9 +14,9 @@ Collatz::Collatz(unsigned long input) {
 
     colNum = input;
     steps = calculateSteps(colNum);
-    //primeFactors = calculatePrimeFactors(colNum);
-    //primeSteps = calculatePrimeSteps(colNum);
-    //orbitalSum = calculateOrbitalSums(colNum);
+    primeFactors = calculatePrimeFactors(colNum);
+    primeSteps = calculatePrimeSteps(colNum);
+    orbitalSum = calculateOrbitalSums(colNum);
 
 }
 
@@ -62,8 +62,6 @@ vector<Point> Collatz::calculateSteps(int num) {
         }
 
         temp.push_back(point);
-
-
 
     }
 
@@ -125,7 +123,7 @@ vector<Point> Collatz::calculatePrimeSteps(int num) {
 
         if (tempPrime[i].size() == 1) {
 
-            point.update(i+1, allStepsTemp[i].returnX());
+            point.update(i+1, allStepsTemp[i].returnY());
             temp.push_back(point);
 
         }
