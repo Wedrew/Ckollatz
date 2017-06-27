@@ -4,9 +4,11 @@
 CMakeFiles/Collatz.dir/Collatz.cpp.o
  /Users/andrewpagan/Documents/Programming/Collatz/Collatz.cpp
  /Users/andrewpagan/Documents/Programming/Collatz/Collatz.h
+ /Users/andrewpagan/Documents/Programming/Collatz/Point.h
  /Users/andrewpagan/Documents/Programming/Collatz/Utilities.cpp
 CMakeFiles/Collatz.dir/main.cpp.o
  /Users/andrewpagan/Documents/Programming/Collatz/Collatz.h
+ /Users/andrewpagan/Documents/Programming/Collatz/Point.h
  /Users/andrewpagan/Documents/Programming/Collatz/main.cpp
  /usr/local/Cellar/sdl2/2.0.5/include/SDL2/SDL.h
  /usr/local/Cellar/sdl2/2.0.5/include/SDL2/SDL_assert.h
