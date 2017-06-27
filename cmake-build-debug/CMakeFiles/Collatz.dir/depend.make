@@ -5,6 +5,7 @@ CMakeFiles/Collatz.dir/Collatz.cpp.o: ../Collatz.cpp
 CMakeFiles/Collatz.dir/Collatz.cpp.o: ../Collatz.h
 CMakeFiles/Collatz.dir/Collatz.cpp.o: ../Utilities.cpp
 
+CMakeFiles/Collatz.dir/main.cpp.o: ../Collatz.h
 CMakeFiles/Collatz.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Collatz.dir/main.cpp.o: /usr/local/Cellar/sdl2/2.0.5/include/SDL2/SDL.h
 CMakeFiles/Collatz.dir/main.cpp.o: /usr/local/Cellar/sdl2/2.0.5/include/SDL2/SDL_assert.h

@@ -12,10 +12,12 @@ class Collatz {
 private:
 
     unsigned long colNum;
+
     std::vector<int> CalculateSteps(int num);
     std::vector<int> CalculateOrbitalSum(int num);
     std::vector<std::vector<int>> CalculatePrimeFactors(int num);
     std::vector<std::vector<int>> CalculatePrimeSteps(int num);
+    int CalculateMaxElement(std::vector<int> temp);
 
     typedef struct orbital {
 
@@ -24,28 +26,30 @@ private:
     }* orbitalPtr;
 
 
-    /* DEPRECATED
+public:
+
+    Collatz(unsigned long input);
+    void PrintOddSteps();
+    void PrintEvenSteps();
+    void PrintSteps();
+    void PrintPrimeFactors();
+    void PrintPrimeSteps();
+    void PrintPathToOne();
+    void PrintOrbitalSum();
+    ~Collatz();
+
     //1D and 2D vectors to use after initialization
-    std::vector<int> allStepsVect;
-    //Orbital sum of all numbers (e.x. 5 would be 5 + 16 + 8 + 4 + 2 + 1 = 36)
-    std::vector<int> orbitalSum;
+    std::vector<int> steps;
     //Each sub element contains prime factors for the corresponding super? element
     std::vector<std::vector<int>> primeFactors;
     //First element in each sub vector is the prime number, second element is amount of steps
     std::vector<std::vector<int>> primeSteps;
-    */
+    //Orbital sum of all numbers (e.x. 5 would be 5 + 16 + 8 + 4 + 2 + 1 = 36)
+    std::vector<int> orbitalSum;
 
-public:
+    int largestStep, largestOrbitalSum, largestPrimeFactor, largestPrimeSteps;
+    int smallestStep, smallestOrbitalSum, smallestPrimeFactor, smallestPrimeSteps;
 
-    Collatz(unsigned long input);
-    void PrintOddSteps(std::vector<int>);
-    void PrintEvenSteps(std::vector<int>);
-    void PrintAllSteps(std::vector<int>);
-    void PrintAllPrimeFactors(std::vector<std::vector<int>>);
-    void PrintAllPrimeSteps(std::vector<std::vector<int>>);
-    void PrintPathToOne(int num);
-    void PrintOrbitalSum(std::vector<int> temp);
-    ~Collatz();
 
 };
 

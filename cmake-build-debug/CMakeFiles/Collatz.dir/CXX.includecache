@@ -35,6 +35,10 @@ SDL.h
 -
 stdio.h
 -
+iostream
+-
+Collatz.h
+/Users/andrewpagan/Documents/Programming/Collatz/Collatz.h
 
 /usr/local/Cellar/sdl2/2.0.5/include/SDL2/SDL.h
 SDL_main.h

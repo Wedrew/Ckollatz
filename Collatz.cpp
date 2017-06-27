@@ -13,11 +13,10 @@ using namespace std;
 Collatz::Collatz(unsigned long input) {
 
     colNum = input;
-    PrintAllSteps(CalculateSteps(colNum));
-    //PrintAllPrimeFactors(CalculatePrimeFactors(colNum));
-    //PrintAllPrimeSteps(CalculatePrimeSteps(colNum));
-    //PrintOrbitalSum(CalculateOrbitalSum(colNum));
-    //PrintPathToOne(colNum);
+    steps = CalculateSteps(colNum);
+    primeFactors = CalculatePrimeFactors(colNum);
+    primeSteps = CalculatePrimeSteps(colNum);
+    orbitalSum = CalculateOrbitalSum(colNum);
 
 }
 
@@ -56,6 +55,7 @@ vector<int> Collatz::CalculateSteps(int num) {
 
     }
 
+    largestStep = CalculateMaxElement(temp);
     return temp;
 
 }
@@ -153,60 +153,67 @@ vector<int> Collatz::CalculateOrbitalSum(int num) {
 
     }
 
+    largestOrbitalSum = CalculateMaxElement(temp);
     return temp;
 
 }
 
+int Collatz::CalculateMaxElement(vector<int> temp) {
+
+    int max = *max_element(temp.begin(), temp.end());
+    return max;
+
+}
 
 
-void Collatz::PrintAllSteps(vector<int> vect) {
+void Collatz::PrintSteps() {
 
     cout << "Printing all numbers:" << endl;
 
-    for (int i = 0; i < vect.size(); i++) {
+    for (int i = 0; i < steps.size(); i++) {
 
-        cout << "Number " << setw(DigitAmount(colNum)) << i+1 << " took " << setw(DigitAmount(*std::max_element(vect.begin(), vect.end()))) << vect[i] << " steps" << endl;
+        cout << "Number " << setw(DigitAmount(colNum)) << i+1 << " took " << setw(DigitAmount(*std::max_element(steps.begin(), steps.end()))) << steps[i] << " steps" << endl;
 
     }
 }
 
-void Collatz::PrintEvenSteps(vector<int> vect) {
+void Collatz::PrintEvenSteps() {
 
     cout << "Printing all even numbers:" << endl;
 
-    for (int i = 0; i < vect.size(); i++) {
+    for (int i = 0; i < steps.size(); i++) {
 
         if (i%2 != 0) {
 
-            cout << "Number " << setw(DigitAmount(colNum)) << i+1 << " took " << setw(DigitAmount(*std::max_element(vect.begin(), vect.end()))) << vect[i] << " steps" << endl;
+            cout << "Number " << setw(DigitAmount(colNum)) << i+1 << " took " << setw(DigitAmount(*std::max_element(steps.begin(), steps.end()))) << steps[i] << " steps" << endl;
 
         }
     }
 }
 
-void Collatz::PrintOddSteps(vector<int> vect) {
+void Collatz::PrintOddSteps() {
 
     cout << "Printing all odd numbers:" << endl;
 
-    for (int i = 0; i < vect.size(); i++) {
+    for (int i = 0; i < steps.size(); i++) {
 
         if (i%2 == 0) {
 
-            cout << "Number " << setw(DigitAmount(colNum)) << i+1  << " took " << setw(DigitAmount(*std::max_element(vect.begin(), vect.end()))) << vect[i] << " steps" << endl;
+            cout << "Number " << setw(DigitAmount(colNum)) << i+1  << " took " << setw(DigitAmount(*std::max_element(steps.begin(), steps.end()))) << steps[i] << " steps" << endl;
 
         }
     }
 }
 
-void Collatz::PrintAllPrimeFactors(vector<vector<int>> vect) {
+void Collatz::PrintPrimeFactors() {
 
-    for (int i = 0; i < vect.size(); i++) {
+    for (int i = 0; i < primeFactors.size(); i++) {
 
         cout << "Number " << setw(DigitAmount(colNum)) << i + 1 << " prime numbers are: ";
 
-        for (int t = 0; t < vect[i].size(); t++) {
+        for (int t = 0; t < primeFactors[i].size(); t++) {
 
-            cout << vect[i][t] << " ";
+            cout << primeFactors[i][t] << " ";
 
         }
 
@@ -215,30 +222,30 @@ void Collatz::PrintAllPrimeFactors(vector<vector<int>> vect) {
     }
 }
 
-void Collatz::PrintOrbitalSum(vector<int> vect) {
+void Collatz::PrintOrbitalSum() {
 
-    for (int i = 0; i < vect.size(); i++) {
+    for (int i = 0; i < orbitalSum.size(); i++) {
 
-        cout << "Number " << i+1 << " has an orbital size of " << vect[i] << endl;
+        cout << "Number " << i+1 << " has an orbital size of " << orbitalSum[i] << endl;
 
     }
 }
 
 
-void Collatz::PrintAllPrimeSteps(std::vector<std::vector<int>> vect) {
+void Collatz::PrintPrimeSteps() {
 
-    for (int i = 0; i < vect.size(); i++) {
+    for (int i = 0; i < primeSteps.size(); i++) {
 
         //Probably a better way to format this text using max_element with 2d vectors somehow
-        cout << "Prime number " << vect[i][0] << " took " << vect[i][1] << " steps" << endl;
+        cout << "Prime number " << primeSteps[i][0] << " took " << primeSteps[i][1] << " steps" << endl;
 
     }
 }
 
-void Collatz::PrintPathToOne(int num) {
+void Collatz::PrintPathToOne() {
 
     int counter = 0;
-    int buff = num;
+    int buff = colNum;
 
     while (buff > 1) {
 
@@ -259,6 +266,6 @@ void Collatz::PrintPathToOne(int num) {
 
     cout << "1" << endl;
     cout << "-------------------------------" << endl;
-    cout << num  << " took " << counter << " steps to to one";
+    cout << colNum  << " took " << counter << " steps to to one";
 
 }
