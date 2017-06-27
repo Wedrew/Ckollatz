@@ -131,6 +131,9 @@ vector<Point> Collatz::calculatePrimeSteps(int num) {
         }
     }
 
+    minPrimeSteps = calculateMinElement(temp);
+    maxPrimeSteps = calculateMaxElement(temp);
+
     return temp;
 
 }
@@ -192,6 +195,12 @@ Point Collatz::calculateMinElement(vector<Point> temp) {
     Point point;
 
     for (int i = 0; i < temp.size(); i++) {
+
+        if (point.returnY() == 0) {
+
+            point.update(i+1,temp[i].returnY());
+
+        }
 
         if (temp[i].returnY() < point.returnY()) {
 

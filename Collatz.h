@@ -42,7 +42,7 @@ public:
     std::vector<Point> orbitalSum;
 
     Point maxStep, maxOrbitalSum, maxPrimeSteps;
-    Point minStep, minOrbitalSum, minPrimeStemps;
+    Point minStep, minOrbitalSum, minPrimeSteps;
 
 };
 
