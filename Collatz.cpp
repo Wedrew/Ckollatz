@@ -65,6 +65,8 @@ vector<Point> Collatz::calculateSteps(int num) {
 
     }
 
+    maxStep = calculateMaxElement(temp);
+    minStep = calculateMinElement(temp);
     return temp;
 
 }
@@ -167,18 +169,39 @@ vector<Point> Collatz::calculateOrbitalSums(int num) {
 
 }
 
-Point Collatz::calculateMaxElement(vector<int> temp) {
+Point Collatz::calculateMaxElement(vector<Point> temp) {
 
-    int max = *max_element(temp.begin(), temp.end());
-    int index = max_element(temp.begin(), temp.end()) - temp.begin() + 1;
-    return max;
+    Point point;
+
+    for (int i = 0; i < temp.size(); i++) {
+
+        if (temp[i].returnY() > point.returnY()) {
+
+            point = temp[i];
+
+        }
+
+    }
+
+    return point;
 
 }
 
-int Collatz::calculateMinElement(vector<int> temp) {
+Point Collatz::calculateMinElement(vector<Point> temp) {
 
-    int min = *min_element(temp.begin(), temp.end());
-    return min;
+    Point point;
+
+    for (int i = 0; i < temp.size(); i++) {
+
+        if (temp[i].returnY() < point.returnY()) {
+
+            point = temp[i];
+
+        }
+
+    }
+
+    return point;
 
 }
 

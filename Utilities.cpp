@@ -4,10 +4,11 @@
 #include <iostream>
 #include <cmath>
 #include <vector>
+#include "Point.h"
 
 using namespace std;
 
-int DigitAmount(int num) {
+int digitAmount(int num) {
 
     int length = 1;
 
@@ -21,7 +22,7 @@ int DigitAmount(int num) {
 
 }
 
-bool IsNumPrime(int colNum) {
+bool isNumPrime(int colNum) {
 
     if (colNum%2 == 0 && colNum != 2) {
 
@@ -42,14 +43,14 @@ bool IsNumPrime(int colNum) {
 
 }
 
-void WriteToFile(vector<int> temp) {
+void writeToFile(vector<int> temp) {
 
 
 
 
 }
 
-void WriteToFile(vector<vector<int>>) {
+void writeToFile(vector<vector<int>>) {
 
 
 

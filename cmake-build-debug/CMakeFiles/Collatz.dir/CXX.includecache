@@ -37,6 +37,8 @@ cmath
 -
 vector
 -
+Point.h
+/Users/andrewpagan/Documents/Programming/Collatz/Point.h
 
 /Users/andrewpagan/Documents/Programming/Collatz/main.cpp
 SDL.h
@@ -47,8 +49,6 @@ iostream
 -
 Collatz.h
 /Users/andrewpagan/Documents/Programming/Collatz/Collatz.h
-Point.h
-/Users/andrewpagan/Documents/Programming/Collatz/Point.h
 
 /usr/local/Cellar/sdl2/2.0.5/include/SDL2/SDL.h
 SDL_main.h

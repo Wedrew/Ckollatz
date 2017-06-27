@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <iostream>
 #include "Collatz.h"
-#include "Point.h"
+
 
 //Screen dimension constants
 const int SCREEN_WIDTH = 640;
@@ -91,7 +91,9 @@ void close()
 
 int main( int argc, char* args[] )
 {
-    Collatz collatz(2000);
+
+    Collatz collatz(200);
+    cout << "For your set the highest amount of steps was " << collatz.maxStep.returnY() << " by the number " << collatz.maxStep.returnX();
 
     //Start up SDL and create window
     if( !init() )

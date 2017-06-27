@@ -67,6 +67,13 @@ public:
 
     }
 
+    // Print the point on the stream. The class ostream is a base class to output streams of various types.
+    void print(ostream &strm)
+    {
+        strm << "(" << xval << "," << yval << ")";
+    }
+
 };
+
 
 #endif //COLLATZ_POINT_H
