@@ -2,6 +2,8 @@
 // Created by Andrew Pagan on 6/26/17.
 //
 #include <iostream>
+#include <cmath>
+#include <vector>
 
 using namespace std;
 

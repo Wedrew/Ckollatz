@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/andrewpagan/Documents/Programming/Collatz/Collatz.cpp
+iostream
+-
+cmath
+-
+iomanip
+-
+Collatz.h
+/Users/andrewpagan/Documents/Programming/Collatz/Collatz.h
+Utilities.cpp
+/Users/andrewpagan/Documents/Programming/Collatz/Utilities.cpp
+
+/Users/andrewpagan/Documents/Programming/Collatz/Collatz.h
+vector
+-
+
+/Users/andrewpagan/Documents/Programming/Collatz/Utilities.cpp
+iostream
+-
+cmath
+-
+vector
+-
+
+/Users/andrewpagan/Documents/Programming/Collatz/main.cpp
+Collatz.h
+/Users/andrewpagan/Documents/Programming/Collatz/Collatz.h
+SDL2/SDL.h
+-
+

@@ -33,7 +33,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.7.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.7.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.7.2/CMakeSystem.cmake"
-  "/usr/local/lib/cmake/SDL2/sdl2-config.cmake"
   )
 
 # The corresponding makefile is:

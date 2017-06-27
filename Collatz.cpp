@@ -4,8 +4,8 @@
 
 #include <iostream>
 #include <cmath>
-#include "Collatz.h"
 #include <iomanip>
+#include "Collatz.h"
 #include "Utilities.cpp"
 
 using namespace std;

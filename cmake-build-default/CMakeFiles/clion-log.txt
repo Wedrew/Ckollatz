@@ -1,0 +1,12 @@
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE= -G "CodeBlocks - Unix Makefiles" /Users/andrewpagan/Documents/Programming/Collatz
+CMake Error at CMakeLists.txt:9 (add_executable):
+  add_executable called with incorrect number of arguments
+
+
+CMake Error at CMakeLists.txt:10 (target_link_libraries):
+  Cannot specify link libraries for target "SDL2_App" which is not built by
+  this project.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/andrewpagan/Documents/Programming/Collatz/cmake-build-default/CMakeFiles/CMakeOutput.log".

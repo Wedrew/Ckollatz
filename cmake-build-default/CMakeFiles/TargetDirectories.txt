@@ -1,0 +1,3 @@
+/Users/andrewpagan/Documents/Programming/Collatz/cmake-build-default/CMakeFiles/rebuild_cache.dir
+/Users/andrewpagan/Documents/Programming/Collatz/cmake-build-default/CMakeFiles/edit_cache.dir
+/Users/andrewpagan/Documents/Programming/Collatz/cmake-build-default/CMakeFiles/Collatz.dir

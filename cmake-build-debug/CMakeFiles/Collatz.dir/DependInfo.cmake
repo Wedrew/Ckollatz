@@ -11,6 +11,8 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../SDL2Test"
+  "/usr/local/Cellar/sdl2/2.0.5/include/SDL2"
   )
 
 # Targets to which this target links.
