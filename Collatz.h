@@ -19,7 +19,7 @@ private:
     std::vector<Point> calculatePrimeSteps(long min, long max);
     Point calculateMaxElement(std::vector<Point> temp);
     Point calculateMinElement(std::vector<Point> temp);
-    void calculatePathToOne(long min, long max);
+    std::vector<vector<long>> calculatePathsToOne(long min, long max);
 
 public:
 
@@ -34,6 +34,8 @@ public:
     std::vector<Point> primeSteps;
     //Orbital sum of all numbers (e.x. 5 would be 5 + 16 + 8 + 4 + 2 + 1 = 36)
     std::vector<Point> orbitalSum;
+    //Path to one for all numbers, first number is the starting number
+    std::vector<vector<long>> pathsToOne;
 
     Point maxStep, maxOrbitalSum, maxPrimeStep;
     Point minStep, minOrbitalSum, minPrimeStep;

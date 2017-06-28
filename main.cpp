@@ -1,4 +1,8 @@
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+
+
 #include "Collatz.h"
 
 
@@ -14,6 +18,5 @@ int main() {
 
 
     }
-
 
 }

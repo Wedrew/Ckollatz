@@ -60,6 +60,7 @@ public:
 
     }
 
+    //Change x and y value if needed
     void update(double a, double b) {
 
         xval = a;

@@ -43,6 +43,10 @@ Point.h
 /Users/andrewpagan/Documents/Programming/Ckollatz/main.cpp
 iostream
 -
+stdio.h
+-
+stdlib.h
+-
 Collatz.h
 /Users/andrewpagan/Documents/Programming/Ckollatz/Collatz.h
 

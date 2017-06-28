@@ -18,6 +18,7 @@ Collatz::Collatz(long min, long max) {
     primeFactors = calculatePrimeFactors(colMin, colMax);
     primeSteps = calculatePrimeSteps(colMin, colMax);
     orbitalSum = calculateOrbitalSums(colMin, colMax);
+    pathsToOne = calculatePathsToOne(colMin, colMax);
 
 }
 
@@ -215,30 +216,41 @@ Point Collatz::calculateMinElement(vector<Point> temp) {
 
 }
 
-/*void Collatz::calculatePathToOne(long min, long max) {
+vector<vector<long>> Collatz::calculatePathsToOne(long min, long max) {
 
-    int counter = 0;
-    int buff = colNum;
+    vector<vector<long>> temp;
 
-    while (buff > 1) {
+    for (long i = 0; i < max-min; i++) {
 
-        if (buff % 2 == 0) {
+        vector<long> paths;
+        long counter = 0;
+        long buff = min+i;
 
-            cout << buff << endl;
-            buff = buff/2;
-            counter++;
+        while (buff >= 1) {
 
-        } else {
+            if (buff == 1) {
 
-            cout << buff << endl;
-            buff= (buff*3)+1;
-            counter++;
+                paths.push_back(1);
+                break;
+
+            } else if (buff % 2 == 0) {
+
+                paths.push_back(buff);
+                buff = buff/2;
+
+            } else {
+
+                paths.push_back(buff);
+                buff = (buff * 3) + 1;
+
+            }
 
         }
+
+        temp.push_back(paths);
+
     }
 
-    cout << "1" << endl;
-    cout << "-------------------------------" << endl;
-    cout << colNum  << " took " << counter << " steps to to one";
+    return temp;
 
-}*/
+}
