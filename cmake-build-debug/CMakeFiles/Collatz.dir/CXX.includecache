@@ -18,19 +18,25 @@ iostream
 math.h
 -
 
+/Users/andrewpagan/Documents/Programming/Ckollatz/Window.cpp
+Window.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Window.h
+iostream
+-
+
+/Users/andrewpagan/Documents/Programming/Ckollatz/Window.h
+string
+-
+SDL.h
+-
+
 /Users/andrewpagan/Documents/Programming/Ckollatz/main.cpp
 iostream
 -
-SDL.h
--
-stdio.h
--
 Collatz.h
 /Users/andrewpagan/Documents/Programming/Ckollatz/Collatz.h
-SDL.h
--
-stdio.h
--
+Window.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Window.h
 
 /usr/local/Cellar/sdl2/2.0.5/include/SDL2/SDL.h
 SDL_main.h

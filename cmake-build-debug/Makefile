@@ -123,6 +123,33 @@ Collatz/fast:
 	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/build
 .PHONY : Collatz/fast
 
+Window.o: Window.cpp.o
+
+.PHONY : Window.o
+
+# target to build an object file
+Window.cpp.o:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Window.cpp.o
+.PHONY : Window.cpp.o
+
+Window.i: Window.cpp.i
+
+.PHONY : Window.i
+
+# target to preprocess a source file
+Window.cpp.i:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Window.cpp.i
+.PHONY : Window.cpp.i
+
+Window.s: Window.cpp.s
+
+.PHONY : Window.s
+
+# target to generate assembly for a file
+Window.cpp.s:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Window.cpp.s
+.PHONY : Window.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Collatz"
+	@echo "... Window.o"
+	@echo "... Window.i"
+	@echo "... Window.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
