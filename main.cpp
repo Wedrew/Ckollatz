@@ -92,7 +92,7 @@ void close()
 int main( int argc, char* args[] )
 {
 
-    Collatz collatz(100, 10000);
+    Collatz collatz(1, 2000);
     cout << "For your set the highest amount of steps was " << collatz.maxStep.returnY() << " by the number " << collatz.maxStep.returnX() << endl;
     cout << "For your set the lowest amount of steps was " << collatz.minStep.returnY() << " by the number " << collatz.minStep.returnX();
 
