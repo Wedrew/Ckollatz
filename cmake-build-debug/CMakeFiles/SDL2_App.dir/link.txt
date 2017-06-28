@@ -1,1 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/SDL2_App.dir/main.cpp.o CMakeFiles/SDL2_App.dir/Collatz.cpp.o CMakeFiles/SDL2_App.dir/Utilities.cpp.o  -o SDL2_App /usr/local/lib/libSDL2.dylib 

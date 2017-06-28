@@ -10,14 +10,14 @@
 
 using namespace std;
 
-Collatz::Collatz(unsigned long min, unsigned long max) {
+Collatz::Collatz(long min, long max) {
 
     colMin = min;
     colMax = max;
-    steps = calculateSteps(min, max);
-    //primeFactors = calculatePrimeFactors(colNum);
-    //primeSteps = calculatePrimeSteps(colNum);
-    //orbitalSum = calculateOrbitalSums(colNum);
+    steps = calculateSteps(colMin, colMax);
+    primeFactors = calculatePrimeFactors(colMin, colMax);
+    primeSteps = calculatePrimeSteps(colMin, colMax);
+    orbitalSum = calculateOrbitalSums(colMin, colMax);
 
 }
 
@@ -28,14 +28,14 @@ Collatz::~Collatz() {
 }
 
 //Writes steps into vector of Point objects, always called when class is created
-vector<Point> Collatz::calculateSteps(unsigned long min, unsigned long max) {
+vector<Point> Collatz::calculateSteps(long min, long max) {
 
     vector<Point> temp;
 
-    for (unsigned long i = min; i <= max; i++) {
+    for (long i = min; i <= max; i++) {
 
         int counter = 0;
-        unsigned long buff = i;
+        long buff = i;
         Point point;
 
         while (buff > 1) {
@@ -73,14 +73,14 @@ vector<Point> Collatz::calculateSteps(unsigned long min, unsigned long max) {
 }
 
 //Writes prime factors into 2D vector, always called when class is created
-vector<vector<int>> Collatz::calculatePrimeFactors(int num) {
+vector<vector<long>> Collatz::calculatePrimeFactors(long min, long max) {
 
-    vector<vector<int>> temp;
+    vector<vector<long>> temp;
 
-    for (int i = 0; i < num; i++) {
+    for (long i = min; i <= max; i++) {
 
-        int buff = i+1;
-        vector<int> myRow;
+        long buff = i;
+        vector<long> myRow;
 
         while (buff%2 == 0) {
 
@@ -89,12 +89,12 @@ vector<vector<int>> Collatz::calculatePrimeFactors(int num) {
 
         }
 
-        for (int i = 3; i <= sqrt(buff); i = i + 2) {
+        for (long t = 3; t <= sqrt(buff); t = t + 2) {
 
-            while (buff%i == 0) {
+            while (buff%t == 0) {
 
-                myRow.push_back(i);
-                buff = buff/i;
+                myRow.push_back(t);
+                buff = buff/t;
 
             }
         }
@@ -114,40 +114,40 @@ vector<vector<int>> Collatz::calculatePrimeFactors(int num) {
 }
 
 //Writes prime numbers are corresponding steps into vector
-/*vector<Point> Collatz::calculatePrimeSteps(int num) {
+vector<Point> Collatz::calculatePrimeSteps(long min, long max) {
 
-    vector<vector<int>> tempPrime = calculatePrimeFactors(num);
-    vector<Point> allStepsTemp = calculateSteps(num);
+    vector<vector<long>> tempPrime = calculatePrimeFactors(min, max);
+    vector<Point> allStepsTemp = calculateSteps(min, max);
     vector<Point> temp;
 
-    for (int i = 0; i < num; i++) {
+    for (long i = 0; i < max-min; i++) {
 
         Point point;
 
         if (tempPrime[i].size() == 1) {
 
-            point.update(i+1, allStepsTemp[i].returnY());
+            point.update(i+min, allStepsTemp[i].returnY());
             temp.push_back(point);
 
         }
     }
 
-    minPrimeSteps = calculateMinElement(temp);
-    maxPrimeSteps = calculateMaxElement(temp);
+    minPrimeStep = calculateMinElement(temp);
+    maxPrimeStep = calculateMaxElement(temp);
 
     return temp;
 
-}*/
+}
 
-/*vector<Point> Collatz::calculateOrbitalSums(int num) {
+vector<Point> Collatz::calculateOrbitalSums(long min, long max) {
 
     vector<Point> temp;
 
-    for (int i = 0; i < colNum; i++) {
+    for (long i = min; i <= max; i++) {
 
         Point point;
-        int buff = i+1;
-        int sum = 1;
+        long buff = i;
+        long sum = 1;
 
         while (buff > 1) {
 
@@ -164,14 +164,14 @@ vector<vector<int>> Collatz::calculatePrimeFactors(int num) {
             }
         }
 
-        point.update(i+1, sum);
+        point.update(i, sum);
         temp.push_back(point);
 
     }
 
     return temp;
 
-}*/
+}
 
 Point Collatz::calculateMaxElement(vector<Point> temp) {
 
@@ -215,7 +215,7 @@ Point Collatz::calculateMinElement(vector<Point> temp) {
 
 }
 
-/*void Collatz::printPathToOne() {
+/*void Collatz::calculatePathToOne(long min, long max) {
 
     int counter = 0;
     int buff = colNum;

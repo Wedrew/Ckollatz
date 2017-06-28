@@ -12,24 +12,24 @@ class Collatz {
 
 private:
 
-    unsigned long colMin, colMax;
-    std::vector<Point> calculateSteps(unsigned long min, unsigned long max);
-    std::vector<Point> calculateOrbitalSums(int num);
-    std::vector<std::vector<int>> calculatePrimeFactors(int num);
-    std::vector<Point> calculatePrimeSteps(unsigned long min, unsigned long max);
+    long colMin, colMax;
+    std::vector<Point> calculateSteps(long min, long max);
+    std::vector<Point> calculateOrbitalSums(long min, long max);
+    std::vector<std::vector<long>> calculatePrimeFactors(long min, long max);
+    std::vector<Point> calculatePrimeSteps(long min, long max);
     Point calculateMaxElement(std::vector<Point> temp);
     Point calculateMinElement(std::vector<Point> temp);
+    void calculatePathToOne(long min, long max);
 
 public:
 
-    Collatz(unsigned long min, unsigned long max);
-    void printPathToOne();
+    Collatz(long min, long max);
     ~Collatz();
 
     //1D and 2D vectors to use after initialization
     std::vector<Point> steps;
     //Each sub element contains prime factors for the corresponding super? element
-    std::vector<std::vector<int>> primeFactors;
+    std::vector<std::vector<long>> primeFactors;
     //First element in each sub vector is the prime number, second element is amount of steps
     std::vector<Point> primeSteps;
     //Orbital sum of all numbers (e.x. 5 would be 5 + 16 + 8 + 4 + 2 + 1 = 36)
