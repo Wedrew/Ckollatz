@@ -10,13 +10,14 @@
 
 using namespace std;
 
-Collatz::Collatz(unsigned long input) {
+Collatz::Collatz(unsigned long min, unsigned long max) {
 
-    colNum = input;
-    steps = calculateSteps(colNum);
-    primeFactors = calculatePrimeFactors(colNum);
-    primeSteps = calculatePrimeSteps(colNum);
-    orbitalSum = calculateOrbitalSums(colNum);
+    colMin = min;
+    colMax = max;
+    steps = calculateSteps(min, max);
+    //primeFactors = calculatePrimeFactors(colNum);
+    //primeSteps = calculatePrimeSteps(colNum);
+    //orbitalSum = calculateOrbitalSums(colNum);
 
 }
 
@@ -27,14 +28,14 @@ Collatz::~Collatz() {
 }
 
 //Writes steps into vector of Point objects, always called when class is created
-vector<Point> Collatz::calculateSteps(int num) {
+vector<Point> Collatz::calculateSteps(unsigned long min, unsigned long max) {
 
     vector<Point> temp;
 
-    for (int i = 1; i <= num; i++) {
+    for (unsigned long i = min; i <= max; i++) {
 
         int counter = 0;
-        int buff = i;
+        unsigned long buff = i;
         Point point;
 
         while (buff > 1) {
@@ -113,7 +114,7 @@ vector<vector<int>> Collatz::calculatePrimeFactors(int num) {
 }
 
 //Writes prime numbers are corresponding steps into vector
-vector<Point> Collatz::calculatePrimeSteps(int num) {
+/*vector<Point> Collatz::calculatePrimeSteps(int num) {
 
     vector<vector<int>> tempPrime = calculatePrimeFactors(num);
     vector<Point> allStepsTemp = calculateSteps(num);
@@ -136,9 +137,9 @@ vector<Point> Collatz::calculatePrimeSteps(int num) {
 
     return temp;
 
-}
+}*/
 
-vector<Point> Collatz::calculateOrbitalSums(int num) {
+/*vector<Point> Collatz::calculateOrbitalSums(int num) {
 
     vector<Point> temp;
 
@@ -170,7 +171,7 @@ vector<Point> Collatz::calculateOrbitalSums(int num) {
 
     return temp;
 
-}
+}*/
 
 Point Collatz::calculateMaxElement(vector<Point> temp) {
 
@@ -214,7 +215,7 @@ Point Collatz::calculateMinElement(vector<Point> temp) {
 
 }
 
-void Collatz::printPathToOne() {
+/*void Collatz::printPathToOne() {
 
     int counter = 0;
     int buff = colNum;
@@ -240,4 +241,4 @@ void Collatz::printPathToOne() {
     cout << "-------------------------------" << endl;
     cout << colNum  << " took " << counter << " steps to to one";
 
-}
+}*/

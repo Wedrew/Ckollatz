@@ -92,9 +92,9 @@ void close()
 int main( int argc, char* args[] )
 {
 
-    Collatz collatz(200);
-    cout << "For your set the highest amount of steps was " << collatz.maxPrimeSteps.returnY() << " by the number " << collatz.maxPrimeSteps.returnX() << endl;
-    cout << "For your set the lowest amount of steps was " << collatz.minPrimeSteps.returnY() << " by the number " << collatz.minPrimeSteps.returnX();
+    Collatz collatz(100, 10000);
+    cout << "For your set the highest amount of steps was " << collatz.maxStep.returnY() << " by the number " << collatz.maxStep.returnX() << endl;
+    cout << "For your set the lowest amount of steps was " << collatz.minStep.returnY() << " by the number " << collatz.minStep.returnX();
 
     //Start up SDL and create window
     if( !init() )

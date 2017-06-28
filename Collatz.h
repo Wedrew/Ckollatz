@@ -12,24 +12,18 @@ class Collatz {
 
 private:
 
-    unsigned long colNum;
-    std::vector<Point> calculateSteps(int num);
+    unsigned long colMin, colMax;
+    std::vector<Point> calculateSteps(unsigned long min, unsigned long max);
     std::vector<Point> calculateOrbitalSums(int num);
     std::vector<std::vector<int>> calculatePrimeFactors(int num);
-    std::vector<Point> calculatePrimeSteps(int num);
+    std::vector<Point> calculatePrimeSteps(unsigned long min, unsigned long max);
     Point calculateMaxElement(std::vector<Point> temp);
     Point calculateMinElement(std::vector<Point> temp);
 
 public:
 
-    Collatz(unsigned long input);
-    void printOddSteps();
-    void printEvenSteps();
-    void printSteps();
-    void printPrimeFactors();
-    void printPrimeSteps();
+    Collatz(unsigned long min, unsigned long max);
     void printPathToOne();
-    void printOrbitalSum();
     ~Collatz();
 
     //1D and 2D vectors to use after initialization
@@ -41,8 +35,8 @@ public:
     //Orbital sum of all numbers (e.x. 5 would be 5 + 16 + 8 + 4 + 2 + 1 = 36)
     std::vector<Point> orbitalSum;
 
-    Point maxStep, maxOrbitalSum, maxPrimeSteps;
-    Point minStep, minOrbitalSum, minPrimeSteps;
+    Point maxStep, maxOrbitalSum, maxPrimeStep;
+    Point minStep, minOrbitalSum, minPrimeStep;
 
 };
 
