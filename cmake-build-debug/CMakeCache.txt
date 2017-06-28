@@ -20,6 +20,10 @@ BUILD_SHARED_LIBS:BOOL=OFF
 //Path to a program.
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
 
+//For backwards compatibility, what version of CMake commands and
+// syntax should this version of CMake try to support.
+CMAKE_BACKWARDS_COMPATIBILITY:STRING=2.4
+
 //Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
 // CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
 CMAKE_BUILD_TYPE:STRING=Debug
@@ -138,7 +142,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:STRING=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Collatz
+CMAKE_PROJECT_NAME:STATIC=Project
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -204,6 +208,9 @@ Collatz_BINARY_DIR:STATIC=/Users/andrewpagan/Documents/Programming/Ckollatz/cmak
 //Value Computed by CMake
 Collatz_SOURCE_DIR:STATIC=/Users/andrewpagan/Documents/Programming/Ckollatz
 
+//Single output directory for building all executables.
+EXECUTABLE_OUTPUT_PATH:PATH=
+
 //Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/glfw-3.2.1
 
@@ -237,6 +244,9 @@ GLFW_VULKAN_STATIC:BOOL=OFF
 //Path to a library.
 IOKIT_FRAMEWORK:FILEPATH=/System/Library/Frameworks/IOKit.framework
 
+//Single output directory for building all libraries.
+LIBRARY_OUTPUT_PATH:PATH=
+
 //Takes an empty string or 64. Directory where lib will be installed:
 // lib or lib64
 LIB_SUFFIX:STRING=
@@ -253,8 +263,14 @@ OPENGL_glu_LIBRARY:FILEPATH=/System/Library/Frameworks/OpenGL.framework
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/Users/andrewpagan/Documents/Programming/Ckollatz
+
 //The directory containing a CMake configuration file for SDL2.
-SDL2_DIR:PATH=SDL2_DIR-NOTFOUND
+SDL2_DIR:PATH=/usr/local/lib/cmake/SDL2
 
 //Path to a file.
 VULKAN_INCLUDE_DIR:PATH=VULKAN_INCLUDE_DIR-NOTFOUND

@@ -123,33 +123,6 @@ Collatz/fast:
 	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/build
 .PHONY : Collatz/fast
 
-Collatz.o: Collatz.cpp.o
-
-.PHONY : Collatz.o
-
-# target to build an object file
-Collatz.cpp.o:
-	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Collatz.cpp.o
-.PHONY : Collatz.cpp.o
-
-Collatz.i: Collatz.cpp.i
-
-.PHONY : Collatz.i
-
-# target to preprocess a source file
-Collatz.cpp.i:
-	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Collatz.cpp.i
-.PHONY : Collatz.cpp.i
-
-Collatz.s: Collatz.cpp.s
-
-.PHONY : Collatz.s
-
-# target to generate assembly for a file
-Collatz.cpp.s:
-	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Collatz.cpp.s
-.PHONY : Collatz.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -186,9 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Collatz"
-	@echo "... Collatz.o"
-	@echo "... Collatz.i"
-	@echo "... Collatz.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
