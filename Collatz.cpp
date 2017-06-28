@@ -244,7 +244,6 @@ vector<vector<long>> Collatz::calculatePathsToOne(long min, long max) {
                 buff = (buff * 3) + 1;
 
             }
-
         }
 
         temp.push_back(paths);
