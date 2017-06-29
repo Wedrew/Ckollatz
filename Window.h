@@ -27,8 +27,6 @@ private:
 private:
 
     std::string title;
-    int width = 800;
-    int height = 600;
     bool closed = false;
 
     SDL_Window *window = nullptr;
@@ -36,6 +34,8 @@ private:
 protected:
 
     SDL_Renderer *renderer = nullptr;
+    int width = 800;
+    int height = 600;
 
 };
 

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/andrewpagan/Documents/Programming/Ckollatz/Collatz.cpp" "/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/CMakeFiles/Collatz.dir/Collatz.cpp.o"
+  "/Users/andrewpagan/Documents/Programming/Ckollatz/Graph.cpp" "/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/CMakeFiles/Collatz.dir/Graph.cpp.o"
   "/Users/andrewpagan/Documents/Programming/Ckollatz/Rect.cpp" "/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/CMakeFiles/Collatz.dir/Rect.cpp.o"
   "/Users/andrewpagan/Documents/Programming/Ckollatz/Utilities.cpp" "/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/CMakeFiles/Collatz.dir/Utilities.cpp.o"
   "/Users/andrewpagan/Documents/Programming/Ckollatz/Window.cpp" "/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/CMakeFiles/Collatz.dir/Window.cpp.o"

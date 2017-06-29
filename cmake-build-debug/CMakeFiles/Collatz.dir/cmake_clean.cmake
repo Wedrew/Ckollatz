@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Collatz.dir/Utilities.cpp.o"
   "CMakeFiles/Collatz.dir/Window.cpp.o"
   "CMakeFiles/Collatz.dir/Rect.cpp.o"
+  "CMakeFiles/Collatz.dir/Graph.cpp.o"
   "Collatz.pdb"
   "Collatz"
 )

@@ -20,6 +20,18 @@ vector
 Point.h
 /Users/andrewpagan/Documents/Programming/Ckollatz/Point.h
 
+/Users/andrewpagan/Documents/Programming/Ckollatz/Graph.cpp
+Graph.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Graph.h
+
+/Users/andrewpagan/Documents/Programming/Ckollatz/Graph.h
+vector
+-
+Window.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Window.h
+Point.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Point.h
+
 /Users/andrewpagan/Documents/Programming/Ckollatz/Point.h
 iostream
 -
@@ -61,6 +73,10 @@ Window.h
 /Users/andrewpagan/Documents/Programming/Ckollatz/Window.h
 Rect.h
 /Users/andrewpagan/Documents/Programming/Ckollatz/Rect.h
+Graph.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Graph.h
+Collatz.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Collatz.h
 
 /usr/local/Cellar/sdl2/2.0.5/include/SDL2/SDL.h
 SDL_main.h

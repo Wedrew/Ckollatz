@@ -1,15 +1,18 @@
 #include <iostream>
 #include "Window.h"
 #include "Rect.h"
+#include "Graph.h"
+#include "Collatz.h"
 
 int main (int argc, char **argv) {
 
     Window window("Collatz", 800, 600);
-    Rect rect(window, 120, 120, 100, 100, 200, 0, 200, 255);
+    Collatz collatz(1,1000);
+    Graph graph(window, collatz.steps);
 
     while (!window.isClosed()) {
 
-        rect.draw();
+        graph.draw();
         window.pollEvents();
         window.clear();
 

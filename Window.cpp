@@ -82,7 +82,7 @@ void Window::pollEvents() {
 void Window::clear() const {
 
     SDL_RenderPresent(renderer);
-    SDL_SetRenderDrawColor(renderer, 0, 0, 200, 255);
+    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
     SDL_RenderClear(renderer);
 
 }

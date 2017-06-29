@@ -150,6 +150,33 @@ Collatz.cpp.s:
 	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Collatz.cpp.s
 .PHONY : Collatz.cpp.s
 
+Graph.o: Graph.cpp.o
+
+.PHONY : Graph.o
+
+# target to build an object file
+Graph.cpp.o:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Graph.cpp.o
+.PHONY : Graph.cpp.o
+
+Graph.i: Graph.cpp.i
+
+.PHONY : Graph.i
+
+# target to preprocess a source file
+Graph.cpp.i:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
+
+Graph.s: Graph.cpp.s
+
+.PHONY : Graph.s
+
+# target to generate assembly for a file
+Graph.cpp.s:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
+
 Rect.o: Rect.cpp.o
 
 .PHONY : Rect.o
@@ -270,6 +297,9 @@ help:
 	@echo "... Collatz.o"
 	@echo "... Collatz.i"
 	@echo "... Collatz.s"
+	@echo "... Graph.o"
+	@echo "... Graph.i"
+	@echo "... Graph.s"
 	@echo "... Rect.o"
 	@echo "... Rect.i"
 	@echo "... Rect.s"
