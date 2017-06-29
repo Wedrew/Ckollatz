@@ -81,9 +81,57 @@ CMakeFiles/Collatz.dir/main.cpp.o.provides: CMakeFiles/Collatz.dir/main.cpp.o.re
 CMakeFiles/Collatz.dir/main.cpp.o.provides.build: CMakeFiles/Collatz.dir/main.cpp.o
 
 
+CMakeFiles/Collatz.dir/Collatz.cpp.o: CMakeFiles/Collatz.dir/flags.make
+CMakeFiles/Collatz.dir/Collatz.cpp.o: ../Collatz.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Collatz.dir/Collatz.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Collatz.dir/Collatz.cpp.o -c /Users/andrewpagan/Documents/Programming/Ckollatz/Collatz.cpp
+
+CMakeFiles/Collatz.dir/Collatz.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Collatz.dir/Collatz.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andrewpagan/Documents/Programming/Ckollatz/Collatz.cpp > CMakeFiles/Collatz.dir/Collatz.cpp.i
+
+CMakeFiles/Collatz.dir/Collatz.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Collatz.dir/Collatz.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andrewpagan/Documents/Programming/Ckollatz/Collatz.cpp -o CMakeFiles/Collatz.dir/Collatz.cpp.s
+
+CMakeFiles/Collatz.dir/Collatz.cpp.o.requires:
+
+.PHONY : CMakeFiles/Collatz.dir/Collatz.cpp.o.requires
+
+CMakeFiles/Collatz.dir/Collatz.cpp.o.provides: CMakeFiles/Collatz.dir/Collatz.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Collatz.cpp.o.provides.build
+.PHONY : CMakeFiles/Collatz.dir/Collatz.cpp.o.provides
+
+CMakeFiles/Collatz.dir/Collatz.cpp.o.provides.build: CMakeFiles/Collatz.dir/Collatz.cpp.o
+
+
+CMakeFiles/Collatz.dir/Utilities.cpp.o: CMakeFiles/Collatz.dir/flags.make
+CMakeFiles/Collatz.dir/Utilities.cpp.o: ../Utilities.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Collatz.dir/Utilities.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Collatz.dir/Utilities.cpp.o -c /Users/andrewpagan/Documents/Programming/Ckollatz/Utilities.cpp
+
+CMakeFiles/Collatz.dir/Utilities.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Collatz.dir/Utilities.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/andrewpagan/Documents/Programming/Ckollatz/Utilities.cpp > CMakeFiles/Collatz.dir/Utilities.cpp.i
+
+CMakeFiles/Collatz.dir/Utilities.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Collatz.dir/Utilities.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/andrewpagan/Documents/Programming/Ckollatz/Utilities.cpp -o CMakeFiles/Collatz.dir/Utilities.cpp.s
+
+CMakeFiles/Collatz.dir/Utilities.cpp.o.requires:
+
+.PHONY : CMakeFiles/Collatz.dir/Utilities.cpp.o.requires
+
+CMakeFiles/Collatz.dir/Utilities.cpp.o.provides: CMakeFiles/Collatz.dir/Utilities.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Utilities.cpp.o.provides.build
+.PHONY : CMakeFiles/Collatz.dir/Utilities.cpp.o.provides
+
+CMakeFiles/Collatz.dir/Utilities.cpp.o.provides.build: CMakeFiles/Collatz.dir/Utilities.cpp.o
+
+
 CMakeFiles/Collatz.dir/Window.cpp.o: CMakeFiles/Collatz.dir/flags.make
 CMakeFiles/Collatz.dir/Window.cpp.o: ../Window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Collatz.dir/Window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Collatz.dir/Window.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Collatz.dir/Window.cpp.o -c /Users/andrewpagan/Documents/Programming/Ckollatz/Window.cpp
 
 CMakeFiles/Collatz.dir/Window.cpp.i: cmake_force
@@ -108,16 +156,20 @@ CMakeFiles/Collatz.dir/Window.cpp.o.provides.build: CMakeFiles/Collatz.dir/Windo
 # Object files for target Collatz
 Collatz_OBJECTS = \
 "CMakeFiles/Collatz.dir/main.cpp.o" \
+"CMakeFiles/Collatz.dir/Collatz.cpp.o" \
+"CMakeFiles/Collatz.dir/Utilities.cpp.o" \
 "CMakeFiles/Collatz.dir/Window.cpp.o"
 
 # External object files for target Collatz
 Collatz_EXTERNAL_OBJECTS =
 
 Collatz: CMakeFiles/Collatz.dir/main.cpp.o
+Collatz: CMakeFiles/Collatz.dir/Collatz.cpp.o
+Collatz: CMakeFiles/Collatz.dir/Utilities.cpp.o
 Collatz: CMakeFiles/Collatz.dir/Window.cpp.o
 Collatz: CMakeFiles/Collatz.dir/build.make
 Collatz: CMakeFiles/Collatz.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Collatz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Collatz"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Collatz.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,6 +178,8 @@ CMakeFiles/Collatz.dir/build: Collatz
 .PHONY : CMakeFiles/Collatz.dir/build
 
 CMakeFiles/Collatz.dir/requires: CMakeFiles/Collatz.dir/main.cpp.o.requires
+CMakeFiles/Collatz.dir/requires: CMakeFiles/Collatz.dir/Collatz.cpp.o.requires
+CMakeFiles/Collatz.dir/requires: CMakeFiles/Collatz.dir/Utilities.cpp.o.requires
 CMakeFiles/Collatz.dir/requires: CMakeFiles/Collatz.dir/Window.cpp.o.requires
 
 .PHONY : CMakeFiles/Collatz.dir/requires

@@ -14,15 +14,8 @@
 # EXTERNAL cache entries
 ########################
 
-//Build shared libraries
-BUILD_SHARED_LIBS:BOOL=OFF
-
 //Path to a program.
 CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar
-
-//For backwards compatibility, what version of CMake commands and
-// syntax should this version of CMake try to support.
-CMAKE_BACKWARDS_COMPATIBILITY:STRING=2.4
 
 //Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
 // CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
@@ -193,73 +186,6 @@ CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/Xcode
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Path to a library.
-COCOA_FRAMEWORK:FILEPATH=/System/Library/Frameworks/Cocoa.framework
-
-//Path to a library.
-CORE_FOUNDATION_FRAMEWORK:FILEPATH=/System/Library/Frameworks/CoreFoundation.framework
-
-//Path to a library.
-CORE_VIDEO_FRAMEWORK:FILEPATH=/System/Library/Frameworks/CoreVideo.framework
-
-//Value Computed by CMake
-Collatz_BINARY_DIR:STATIC=/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug
-
-//Value Computed by CMake
-Collatz_SOURCE_DIR:STATIC=/Users/andrewpagan/Documents/Programming/Ckollatz
-
-//Single output directory for building all executables.
-EXECUTABLE_OUTPUT_PATH:PATH=
-
-//Value Computed by CMake
-GLFW_BINARY_DIR:STATIC=/Users/andrewpagan/Documents/Programming/Ckollatz/cmake-build-debug/glfw-3.2.1
-
-GLFW_BUILD_DOCS:BOOL=OFF
-
-GLFW_BUILD_EXAMPLES:BOOL=OFF
-
-GLFW_BUILD_TESTS:BOOL=OFF
-
-//Include internals in documentation
-GLFW_DOCUMENT_INTERNALS:BOOL=OFF
-
-//Generate installation target
-GLFW_INSTALL:BOOL=ON
-
-//Value Computed by CMake
-GLFW_SOURCE_DIR:STATIC=/Users/andrewpagan/Documents/Programming/Ckollatz/glfw-3.2.1
-
-//Make glfwInit chdir to Contents/Resources
-GLFW_USE_CHDIR:BOOL=ON
-
-//Populate the menu bar on first window creation
-GLFW_USE_MENUBAR:BOOL=ON
-
-//Use the full resolution of Retina displays
-GLFW_USE_RETINA:BOOL=ON
-
-//Use the Vulkan loader statically linked into application
-GLFW_VULKAN_STATIC:BOOL=OFF
-
-//Path to a library.
-IOKIT_FRAMEWORK:FILEPATH=/System/Library/Frameworks/IOKit.framework
-
-//Single output directory for building all libraries.
-LIBRARY_OUTPUT_PATH:PATH=
-
-//Takes an empty string or 64. Directory where lib will be installed:
-// lib or lib64
-LIB_SUFFIX:STRING=
-
-//Include for OpenGL on OS X
-OPENGL_INCLUDE_DIR:PATH=/System/Library/Frameworks/OpenGL.framework
-
-//OpenGL library for OS X
-OPENGL_gl_LIBRARY:FILEPATH=/System/Library/Frameworks/OpenGL.framework
-
-//GLU library for OS X (usually same as OpenGL library)
-OPENGL_glu_LIBRARY:FILEPATH=/System/Library/Frameworks/OpenGL.framework
-
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
@@ -271,18 +197,6 @@ Project_SOURCE_DIR:STATIC=/Users/andrewpagan/Documents/Programming/Ckollatz
 
 //The directory containing a CMake configuration file for SDL2.
 SDL2_DIR:PATH=/usr/local/lib/cmake/SDL2
-
-//Path to a file.
-VULKAN_INCLUDE_DIR:PATH=VULKAN_INCLUDE_DIR-NOTFOUND
-
-//Path to a library.
-VULKAN_LIBRARY:FILEPATH=VULKAN_LIBRARY-NOTFOUND
-
-//The directory containing a CMake configuration file for glfw3.
-glfw3_DIR:PATH=/usr/local/lib/cmake/glfw3
-
-//Dependencies for target
-glfw_LIB_DEPENDS:STATIC=
 
 
 ########################
@@ -361,10 +275,6 @@ CMAKE_GENERATOR:INTERNAL=Unix Makefiles
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
-//Have symbol pthread_create
-CMAKE_HAVE_LIBC_CREATE:INTERNAL=1
-//Have include pthread.h
-CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/Users/andrewpagan/Documents/Programming/Ckollatz
@@ -426,28 +336,6 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COCOA_FRAMEWORK
-COCOA_FRAMEWORK-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CORE_FOUNDATION_FRAMEWORK
-CORE_FOUNDATION_FRAMEWORK-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CORE_VIDEO_FRAMEWORK
-CORE_VIDEO_FRAMEWORK-ADVANCED:INTERNAL=1
-//Details about finding OpenGL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/System/Library/Frameworks/OpenGL.framework][/System/Library/Frameworks/OpenGL.framework][v()]
-//Details about finding Threads
-FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-//ADVANCED property for variable: IOKIT_FRAMEWORK
-IOKIT_FRAMEWORK-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OPENGL_INCLUDE_DIR
-OPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OPENGL_gl_LIBRARY
-OPENGL_gl_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: OPENGL_glu_LIBRARY
-OPENGL_glu_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl
 ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: VULKAN_INCLUDE_DIR
-VULKAN_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: VULKAN_LIBRARY
-VULKAN_LIBRARY-ADVANCED:INTERNAL=1
 

@@ -4,9 +4,7 @@
 
 #include <iostream>
 #include <cmath>
-#include <iomanip>
 #include "Collatz.h"
-#include "Utilities.cpp"
 
 using namespace std;
 
@@ -72,6 +70,7 @@ vector<Point> Collatz::calculateSteps(long min, long max) {
     return temp;
 
 }
+
 
 //Writes prime factors into 2D vector, always called when class is created
 vector<vector<long>> Collatz::calculatePrimeFactors(long min, long max) {

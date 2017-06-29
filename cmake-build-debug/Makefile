@@ -123,6 +123,60 @@ Collatz/fast:
 	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/build
 .PHONY : Collatz/fast
 
+Collatz.o: Collatz.cpp.o
+
+.PHONY : Collatz.o
+
+# target to build an object file
+Collatz.cpp.o:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Collatz.cpp.o
+.PHONY : Collatz.cpp.o
+
+Collatz.i: Collatz.cpp.i
+
+.PHONY : Collatz.i
+
+# target to preprocess a source file
+Collatz.cpp.i:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Collatz.cpp.i
+.PHONY : Collatz.cpp.i
+
+Collatz.s: Collatz.cpp.s
+
+.PHONY : Collatz.s
+
+# target to generate assembly for a file
+Collatz.cpp.s:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Collatz.cpp.s
+.PHONY : Collatz.cpp.s
+
+Utilities.o: Utilities.cpp.o
+
+.PHONY : Utilities.o
+
+# target to build an object file
+Utilities.cpp.o:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Utilities.cpp.o
+.PHONY : Utilities.cpp.o
+
+Utilities.i: Utilities.cpp.i
+
+.PHONY : Utilities.i
+
+# target to preprocess a source file
+Utilities.cpp.i:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Utilities.cpp.i
+.PHONY : Utilities.cpp.i
+
+Utilities.s: Utilities.cpp.s
+
+.PHONY : Utilities.s
+
+# target to generate assembly for a file
+Utilities.cpp.s:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Utilities.cpp.s
+.PHONY : Utilities.cpp.s
+
 Window.o: Window.cpp.o
 
 .PHONY : Window.o
@@ -186,6 +240,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Collatz"
+	@echo "... Collatz.o"
+	@echo "... Collatz.i"
+	@echo "... Collatz.s"
+	@echo "... Utilities.o"
+	@echo "... Utilities.i"
+	@echo "... Utilities.s"
 	@echo "... Window.o"
 	@echo "... Window.i"
 	@echo "... Window.s"

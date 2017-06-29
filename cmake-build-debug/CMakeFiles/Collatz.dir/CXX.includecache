@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/Users/andrewpagan/Documents/Programming/Ckollatz/Collatz.cpp
+iostream
+-
+cmath
+-
+Collatz.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Collatz.h
+
 /Users/andrewpagan/Documents/Programming/Ckollatz/Collatz.h
 vector
 -
@@ -18,11 +26,19 @@ iostream
 math.h
 -
 
-/Users/andrewpagan/Documents/Programming/Ckollatz/Window.cpp
-Window.h
-/Users/andrewpagan/Documents/Programming/Ckollatz/Window.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Utilities.cpp
 iostream
 -
+cmath
+-
+
+/Users/andrewpagan/Documents/Programming/Ckollatz/Window.cpp
+SDL.h
+-
+Window.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Window.h
+Collatz.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Collatz.h
 
 /Users/andrewpagan/Documents/Programming/Ckollatz/Window.h
 string
@@ -33,8 +49,6 @@ SDL.h
 /Users/andrewpagan/Documents/Programming/Ckollatz/main.cpp
 iostream
 -
-Collatz.h
-/Users/andrewpagan/Documents/Programming/Ckollatz/Collatz.h
 Window.h
 /Users/andrewpagan/Documents/Programming/Ckollatz/Window.h
 

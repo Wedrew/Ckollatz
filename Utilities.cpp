@@ -3,8 +3,6 @@
 //
 #include <iostream>
 #include <cmath>
-#include <vector>
-#include "Point.h"
 
 using namespace std;
 
@@ -40,19 +38,5 @@ bool isNumPrime(int colNum) {
     }
 
     return true;
-
-}
-
-void writeToFile(vector<int> temp) {
-
-
-
-
-}
-
-void writeToFile(vector<vector<int>>) {
-
-
-
 
 }

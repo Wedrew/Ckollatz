@@ -16,6 +16,7 @@ public:
     ~Window();
 
     void pollEvents();
+    void clear() const;
     inline bool isClosed() const {return closed;};
 
 private:
@@ -31,6 +32,10 @@ private:
     bool closed = false;
 
     SDL_Window *window = nullptr;
+
+protected:
+
+    SDL_Renderer *renderer = nullptr;
 
 };
 
