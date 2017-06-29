@@ -4,11 +4,14 @@
 #include "Graph.h"
 #include "Collatz.h"
 
+const int WIDTH = 800;
+const int HEIGHT = 600;
+
 int main (int argc, char **argv) {
 
-    Window window("Collatz", 800, 600);
+    Window window("Collatz", WIDTH, HEIGHT);
     Collatz collatz(1,1000);
-    Graph graph(window, collatz.steps);
+    Graph graph(window, WIDTH, HEIGHT, 25);
 
     while (!window.isClosed()) {
 

@@ -13,14 +13,14 @@ class Graph : public Window {
 
 public:
 
-    Graph(const Window &window, vector<Point> points);
+    Graph(const Window &window, int width, int height, int displacement);
     void draw();
 
 private:
 
-    vector<Point> points;
-
-
+    int width;
+    int height;
+    int displacement;
 
 };
 
