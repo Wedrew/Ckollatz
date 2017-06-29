@@ -26,6 +26,14 @@ iostream
 math.h
 -
 
+/Users/andrewpagan/Documents/Programming/Ckollatz/Rect.cpp
+Rect.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Rect.h
+
+/Users/andrewpagan/Documents/Programming/Ckollatz/Rect.h
+Window.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Window.h
+
 /Users/andrewpagan/Documents/Programming/Ckollatz/Utilities.cpp
 iostream
 -
@@ -51,6 +59,8 @@ iostream
 -
 Window.h
 /Users/andrewpagan/Documents/Programming/Ckollatz/Window.h
+Rect.h
+/Users/andrewpagan/Documents/Programming/Ckollatz/Rect.h
 
 /usr/local/Cellar/sdl2/2.0.5/include/SDL2/SDL.h
 SDL_main.h

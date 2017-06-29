@@ -81,58 +81,8 @@ void Window::pollEvents() {
 
 void Window::clear() const {
 
-    Collatz collatz(1,100);
-
-    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
-    SDL_RenderClear(renderer);
-
-    SDL_Rect rect;
-
-    /*for (int i = 0; i < 10000; i++) {
-
-        rect.w = 1;
-        rect.h = 1;
-        rect.x = (collatz.steps[i].returnX()/10);
-        rect.y = -(collatz.steps[i].returnY()) + height;
-
-        SDL_SetRenderDrawColor(renderer, 0, 210, 0, 255);
-        SDL_RenderFillRect(renderer, &rect);
-
-    }*/
-
-    /*for (int i = 0; i < collatz.pathsToOne[26].size(); i++) {
-
-        rect.w = 1;
-        rect.h = 1;
-
-        rect.x = i+1;
-        rect.y = -(collatz.pathsToOne[26][i]) + height;
-
-        SDL_SetRenderDrawColor(renderer, 0, 210, 0, 255);
-        SDL_RenderFillRect(renderer, &rect);
-
-    }*/
-
-    for (int i = 0; i < collatz.pathsToOne.size(); i++) {
-
-        rect.w = 1;
-        rect.h = 1;
-
-
-        for (int t = 0; t < collatz.pathsToOne[i].size(); t++) {
-
-            rect.x = t+1;
-            rect.y = -(collatz.pathsToOne[i][t]) + height;
-
-            SDL_SetRenderDrawColor(renderer, 0, 210, 0, 255);
-            SDL_RenderFillRect(renderer, &rect);
-
-        }
-
-
-    }
-
     SDL_RenderPresent(renderer);
-
+    SDL_SetRenderDrawColor(renderer, 0, 0, 200, 255);
+    SDL_RenderClear(renderer);
 
 }

@@ -57,7 +57,7 @@ vector<Point> Collatz::calculateSteps(long min, long max) {
 
         if (i == 1) {
 
-            point.update(1, 1);
+            point.update(0, 1);
 
         }
 

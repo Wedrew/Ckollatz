@@ -150,6 +150,33 @@ Collatz.cpp.s:
 	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Collatz.cpp.s
 .PHONY : Collatz.cpp.s
 
+Rect.o: Rect.cpp.o
+
+.PHONY : Rect.o
+
+# target to build an object file
+Rect.cpp.o:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Rect.cpp.o
+.PHONY : Rect.cpp.o
+
+Rect.i: Rect.cpp.i
+
+.PHONY : Rect.i
+
+# target to preprocess a source file
+Rect.cpp.i:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Rect.cpp.i
+.PHONY : Rect.cpp.i
+
+Rect.s: Rect.cpp.s
+
+.PHONY : Rect.s
+
+# target to generate assembly for a file
+Rect.cpp.s:
+	$(MAKE) -f CMakeFiles/Collatz.dir/build.make CMakeFiles/Collatz.dir/Rect.cpp.s
+.PHONY : Rect.cpp.s
+
 Utilities.o: Utilities.cpp.o
 
 .PHONY : Utilities.o
@@ -243,6 +270,9 @@ help:
 	@echo "... Collatz.o"
 	@echo "... Collatz.i"
 	@echo "... Collatz.s"
+	@echo "... Rect.o"
+	@echo "... Rect.i"
+	@echo "... Rect.s"
 	@echo "... Utilities.o"
 	@echo "... Utilities.i"
 	@echo "... Utilities.s"
