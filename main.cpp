@@ -13,7 +13,7 @@ int main (int argc, char **argv)
 {
     Window window("Collatz", WIDTH, HEIGHT);
     Collatz collatz(1,30000);
-    Graph graph(window, collatz);
+    Graph graph(window, collatz, "Steps");
 
     while (!window.isClosed()) 
     {

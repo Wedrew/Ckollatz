@@ -13,11 +13,12 @@
 class Graph : public Window 
 {
 public:
-    Graph(const Window &window, Collatz collatz);
+    Graph(const Window &window, Collatz &collatz, std::string data);
     void draw();
 
 private:
     Collatz collatz;
+    std::string data;
     int displacement = 25;
 };
 
