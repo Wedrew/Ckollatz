@@ -1,13 +1,9 @@
 # Collatz
----
 Collatz-Calculations is a cross-platform, visualization program that utilizes SDL2 and OpengGL 3.X to highlight some of the interesting properties about the Collatz Conjecture. It also performs many calculations on the backend which, at the moment, aren't accessible without a GNU debugger (But feel free to dig around for them). I plan on adding support for outputting these calculations to files as well as a GUI in the near future.
 
 # Example Screenshots:
----
 ![ScreenShot](https://i.imgur.com/sD6eVEB.png)
 x-axis represents starting number, y-axis represents corresponding length of orbit to 1
-
----
 
 ![ScreenShot](https://i.imgur.com/yxTL474.png)
 x-axis represents starting number y-axis represents the orbital sum
