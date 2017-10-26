@@ -12,7 +12,7 @@ const int REALHEIGHT = HEIGHT*2; //Only used to for systems with Hidpi
 int main (int argc, char **argv) 
 {
     Window window("Collatz", WIDTH, HEIGHT);
-    Collatz collatz(1,100000);
+    Collatz collatz(1,30000);
     Graph graph(window, collatz);
 
     while (!window.isClosed()) 

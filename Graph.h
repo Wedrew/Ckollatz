@@ -18,6 +18,7 @@ public:
 
 private:
     Collatz collatz;
+    int displacement = 25;
 };
 
 #endif //PROJECT_GRAPH_H

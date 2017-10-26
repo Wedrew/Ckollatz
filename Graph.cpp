@@ -15,14 +15,13 @@ void Graph::draw()
     for (int i =0; i < points.size(); i++) 
     {
         SDL_Point point;
-        point.y = -(points[i].returnY())*4 + (height*2)-25;
-        point.x = (points[i].returnX())/10+25;
+        point.y = (-(points[i].returnY())*4 + (height*2))-displacement;
+        point.x = ((points[i].returnX())/10)+displacement;
 
         SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
         SDL_RenderDrawPoints(renderer, &point, 1);
         
     }
-    int displacement = 25;
 
     SDL_Point axis[4];
     axis[0] = {displacement,(height*2)-displacement};
