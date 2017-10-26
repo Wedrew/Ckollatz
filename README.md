@@ -12,7 +12,7 @@ x-axis represents starting number y-axis represents the orbital sum
 OSX:
   * Need SDL2, OpenGL3.0 minimum and a modern GCC or Clang compiler installed on computer
   * Clone repository and cd to root directory
-  * ```brew install sdl && brew install sdl1```
+  * ```brew install sdl && brew install sdl2```
   * ```$ g++ *.cpp -o Collatz -std=c++11 -lSDL2 -framework Cocoa```
   * ```$ ./Collatz```
   * ???
