@@ -1,5 +1,5 @@
 # Collatz-Calculations
-Collatz-Calculations is a cross-platform, visualization program that utilizes SDL2 and OpengGL 3.X to highlight some of the interesting properties about the Collatz Conjecture. It performs many calculations on the backend which, at the moment, aren't accessible without a GNU debugger (But feel free to dig around for them). Currently there isn't any way to interact with the data other than editing the code. Maybe I'll add an interface if I'm not lazy...
+Collatz-Calculations is a cross-platform, visualization program that utilizes SDL2 and OpengGL 3.X to highlight some of the interesting properties about the Collatz Conjecture. It performs many calculations on the backend which, at the moment, aren't accessible without a GNU debugger (But feel free to dig around for them). Currently there isn't any way to interact with the data other than editing the code. Maybe I'll add an interface...
 
 # Example Screenshots:
 ![ScreenShot](https://i.imgur.com/XqW13z9.png)
