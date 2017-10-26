@@ -6,12 +6,11 @@
 #define PROJECT_WINDOW_H
 
 #include <string>
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
-class Window {
-
+class Window 
+{
 public:
-
     Window(const std::string &title, int width, int height);
     ~Window();
 
@@ -20,24 +19,15 @@ public:
     inline bool isClosed() const {return closed;};
 
 private:
-
     bool init();
-
-
-private:
-
     std::string title;
     bool closed = false;
-
     SDL_Window *window = nullptr;
 
 protected:
-
     SDL_Renderer *renderer = nullptr;
     int width = 800;
     int height = 600;
-
 };
-
 
 #endif //PROJECT_WINDOW_H

@@ -5,13 +5,9 @@
 #ifndef PROJECT_PLOTPOINTS_H
 #define PROJECT_PLOTPOINTS_H
 
-class PlotPoints {
-
+class PlotPoints 
+{
     PlotPoints (){}
-
-
-
-
 };
 
 #endif //PROJECT_PLOTPOINTS_H

@@ -5,22 +5,20 @@
 #ifndef COLLATZ_POINT_H
 #define COLLATZ_POINT_H
 
-
 #include <iostream>
 #include <math.h>
 
 using namespace std;
 
-class Point {
-
+class Point 
+{
 private:
-
     double xval, yval;
 
 public:
-
     //Setter, takes zero one or two arguments
-    Point(double x = 0.0, double y = 0.0) {
+    Point(double x = 0.0, double y = 0.0) 
+    {
         xval = x;
         yval = y;
     }
@@ -30,42 +28,37 @@ public:
     double returnY() { return yval; }
 
     // Distance to another point
-    double distance(Point other) {
-
+    double distance(Point other) 
+    {
         double xd = xval - other.xval;
         double yd = yval - other.yval;
         return sqrt(xd*xd + yd*yd);
-
     }
 
     //Add two points
-    Point addPoints(Point b) {
-
+    Point addPoints(Point b) 
+    {
         return Point(xval + b.xval, yval + b.yval);
-
     }
 
     //Subtract two points
-    Point subtractPoints(Point b) {
-
+    Point subtractPoints(Point b) 
+    {
         return Point(xval - b.xval, yval - b.yval);
-
     }
 
     // Move the existing point.
-    void move(double a, double b) {
-
+    void move(double a, double b) 
+    {
         xval += a;
         yval += b;
-
     }
 
     //Change x and y value if needed
-    void update(double a, double b) {
-
+    void update(double a, double b) 
+    {
         xval = a;
         yval = b;
-
     }
 
     // Print the point on the stream. The class ostream is a base class to output streams of various types.
@@ -73,8 +66,6 @@ public:
     {
         strm << "(" << xval << "," << yval << ")";
     }
-
 };
-
 
 #endif //COLLATZ_POINT_H

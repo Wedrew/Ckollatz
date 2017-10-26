@@ -9,19 +9,14 @@
 #import "Window.h"
 #include "Point.h"
 
-class Graph : public Window {
-
+class Graph : public Window 
+{
 public:
-
-    Graph(const Window &window, int width, int height, int displacement);
+    Graph(const Window &window, vector<Point> points);
     void draw();
 
 private:
-
-    int width;
-    int height;
-    int displacement;
-
+    vector<Point> points;
 };
 
 #endif //PROJECT_GRAPH_H
