@@ -2,27 +2,25 @@
 // Created by Andrew Pagan on 6/29/17.
 //
 
-
-//
-// Created by Andrew Pagan on 6/29/17.
-//
-
 #import "Graph.h"
+#import "Collatz.h"
 
-Graph::Graph(const Window &window, vector<Point> points) : Window(window), points(points) 
+Graph::Graph(const Window &window, Collatz collatz) : Window(window), collatz(collatz)
 {
 }
 
 void Graph::draw()  
 {
+    std::vector<Point> points = collatz.steps;
     for (int i =0; i < points.size(); i++) 
     {
         SDL_Point point;
-        point.y = -(points[i].returnY())*3 + (height*2);
-        point.x = points[i].returnX()/25;
+        point.y = -(points[i].returnY()) + (height*2);
+        point.x = points[i].returnX();
 
         SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
         SDL_RenderDrawPoints(renderer, &point, 1);
+        
     }
 }
 

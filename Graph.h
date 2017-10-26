@@ -6,17 +6,18 @@
 #define PROJECT_GRAPH_H
 
 #include <vector>
+#import "Collatz.h"
 #import "Window.h"
 #include "Point.h"
 
 class Graph : public Window 
 {
 public:
-    Graph(const Window &window, vector<Point> points);
+    Graph(const Window &window, Collatz collatz);
     void draw();
 
 private:
-    vector<Point> points;
+    Collatz collatz;
 };
 
 #endif //PROJECT_GRAPH_H

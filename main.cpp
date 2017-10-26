@@ -11,7 +11,7 @@ int main (int argc, char **argv)
 {
     Window window("Collatz", WIDTH, HEIGHT);
     Collatz collatz(1,100000);
-    Graph graph(window, collatz.steps);
+    Graph graph(window, collatz);
 
     while (!window.isClosed()) 
     {
