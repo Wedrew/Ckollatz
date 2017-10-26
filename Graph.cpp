@@ -18,10 +18,10 @@ void Graph::draw()
     for (int i =0; i < points.size(); i++) 
     {
         SDL_Point point;
-        point.y = -(points[i].returnY())*2 + height;
-        point.x = points[i].returnX()/10;
+        point.y = -(points[i].returnY())*1.5 + height;
+        point.x = points[i].returnX()/50;
 
-        SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
+        SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
         SDL_RenderDrawPoints(renderer, &point, 1);
     }
 }
