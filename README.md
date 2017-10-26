@@ -5,7 +5,7 @@ Collatz-Calculations is a cross-platform, visualization program that utilizes SD
 ![ScreenShot](https://i.imgur.com/XqW13z9.png)
 x-axis represents starting number, y-axis represents corresponding length of orbit to 1
 
-![ScreenShot](https://i.imgur.com/yxTL474.png)
+![ScreenShot](https://i.imgur.com/j21NGbc.png)
 x-axis represents starting number y-axis represents the orbital sum
 
 # Compiling
