@@ -26,8 +26,8 @@ private:
 
 protected:
     SDL_Renderer *renderer = nullptr;
-    int width = 800;
-    int height = 600;
+    int width;
+    int height;
 };
 
 #endif //PROJECT_WINDOW_H

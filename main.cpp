@@ -6,6 +6,8 @@
 
 const int WIDTH = 1400;
 const int HEIGHT = 700;
+const int REALWIDTH = WIDTH*2; //Only used to for systems with Hidpi
+const int REALHEIGHT = HEIGHT*2; //Only used to for systems with Hidpi
 
 int main (int argc, char **argv) 
 {
