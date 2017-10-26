@@ -41,8 +41,6 @@ void Graph::draw()
     xArrow[2] = {((width*2)-6), ((height*2)-displacement)+6};
     xArrow[3] = {(width*2), (height*2)-displacement};
 
-
-
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
     SDL_RenderDrawLines(renderer,xArrow,4);
     SDL_RenderDrawLines(renderer,yArrow, 4);
