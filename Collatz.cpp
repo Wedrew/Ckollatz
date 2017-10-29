@@ -60,7 +60,7 @@ vector<Point> Collatz::calculateSteps(long min, long max)
 
 
 //Writes prime factors into 2D vector, always called when class is created
-vector<vector<long> > Collatz::calculatePrimeFactors(long min, long max) 
+vector<vector<long>> Collatz::calculatePrimeFactors(long min, long max) 
 {
     vector<vector<long> > temp;
 
@@ -175,7 +175,7 @@ Point Collatz::calculateMinElement(vector<Point> temp)
     return point;
 }
 
-vector<vector<long> > Collatz::calculatePathsToOne(long min, long max) 
+vector<vector<long>> Collatz::calculatePathsToOne(long min, long max) 
 {
     vector<vector<long> > temp;
 
