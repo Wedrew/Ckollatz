@@ -25,7 +25,7 @@ void Graph::draw()
 
     } else if (data == "Max")
     {
-        
+        //Do something here
     }
 
     SDL_Point axis[4];
